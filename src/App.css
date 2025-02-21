@@ -1,0 +1,245 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.App {
+  text-align: center;
+}
+/* ///////////////////////////*/
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.fade-in-scale {
+  animation: fadeInScale 0.5s ease-in-out;
+}
+/* ///////////////////////////*/
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.5s ease-in-out;
+}
+/* ///////////////////////////*/
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.zoom-in {
+  animation: zoomIn 0.5s ease-in-out;
+}
+/* /////////////////    //////////*/
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 0.5s ease-in-out;
+}
+
+/* ///////////////////////////*/
+
+.dark {
+  background-color: rgb(41, 39, 39);
+  color: white;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dayNav {
+  background-color: #eceeeb;
+
+}
+
+.dark-mode .nav-link {
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.nav-link {
+  transition: color 0.4s ease-in-out;
+}
+
+.nav-link:hover {
+  font-weight: bold;
+  color: #1dc93a;
+}
+
+.active {
+  color: #1dc93a !important;
+  /* Cambia #007bff al color que desees */
+  font-weight: bold;
+  
+  /* Opcional: agrega negrita al enlace activo */
+}
+
+.activeDark {
+  /* Cambia #007bff al color que desees */
+  font-weight: bold;
+  /* Opcional: agrega negrita al enlace activo */
+}
+
+.btn-outline-success {
+  outline: #1dc93a solid 1px !important;
+}
+
+.btn-darkmode {
+  color: #1dc93a;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.5;
+    transform: rotate(-360deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
+
+.icono {
+  display: inline-block;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.alto{
+  height: 100vh;
+}
+
+.navbar-toggler{
+    color: #1dc93a; /* Cambia #1dc93a al color que desees */
+    border-color: none; /* Cambia #1dc93a al color que desees */
+    box-shadow: none !important;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(29, 201, 58, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.alto{
+  height: 100vh;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.imgCarousel{
+  background-size: cover;
+}
+
+.card-title{
+  color: #1dc93a !important;
+  /* Cambia #007bff al color que desees */
+  font-weight: bold;
+}
+
+.dayProj{
+  background-color: #eceeeb;
+  color: #1b1a1a;
+} 
+.subir:hover{
+  cursor: pointer;
+}
+
+.scrollspy-example-2 {
+  max-height: 400px;
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollspy-example-2::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
