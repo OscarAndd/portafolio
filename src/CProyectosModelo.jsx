@@ -4,12 +4,12 @@ import { DarkmodeContext } from './DarkmodeContext'
 export default function CProyectosModelo(props) {
     const { isClicked } = React.useContext(DarkmodeContext);
 
-    useEffect(() => {
-        const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-        const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new window.bootstrap.Tooltip(tooltipTriggerEl);
-        });
-    }, []);
+    // useEffect(() => {
+    //     const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    //     const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    //         return new window.bootstrap.Tooltip(tooltipTriggerEl);
+    //     });
+    // }, []);
 
     return (
         <div className='row   justify-content-center align-items-center '>
@@ -30,10 +30,14 @@ export default function CProyectosModelo(props) {
                                     {props.descripcion}
                                 </p>
                             </div>
-                            <div className='mt-3'>
-                                <a className='mx-3' href={props.linkRepositorio} target='blank' data-bs-toggle="tooltip" title="Ver código"><i className="bi bi-github"></i></a>
-                                <a  className='mx-3' href={props.linkPagina} target='blank' data-bs-toggle="tooltip" title="Ver proyecto">{props.linkPagina ? <i className="bi bi-browser-chrome"></i> : ""}</a>
+                            <div className='mt-3 d-flex flex-wrap justify-content-center'>
+                                <a className='mx-3' href={props.linkRepositorio} target='blank' >Ver código<i className="bi bi-github ms-1"></i></a>
+                                <a  className='mx-3' href={props.linkPagina} target='blank' >{props.linkPagina ? "Ver Proyecto":""}{props.linkPagina ? <i className="bi bi-browser-chrome ms-1"></i> : ""} </a>
                             </div>
+                            {/* <div className='mt-3 d-flex flex-wrap justify-content-center'>
+                                <a className='mx-3' href={props.linkRepositorio} target='blank' data-bs-toggle="tooltip" title="Ver código">Ver código<i className="bi bi-github ms-1"></i></a>
+                                <a  className='mx-3' href={props.linkPagina} target='blank' data-bs-toggle="tooltip" title="Ver proyecto">{props.linkPagina ? "Ver Proyecto":""}{props.linkPagina ? <i className="bi bi-browser-chrome ms-1"></i> : ""} </a>
+                            </div> */}
                             
                         </div>
                     </div>
