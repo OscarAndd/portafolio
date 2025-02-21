@@ -13,7 +13,7 @@ export default function CProyectosModelo(props) {
 
     return (
         <div className='row   justify-content-center align-items-center '>
-            <div className={`card col-12 mt-3 ${ isClicked ? "text-bg-dark"  :"dayProj" } `} >
+            <div className={`card col-12 mt-3 ${ isClicked ? "darkProj"  :"dayProj" } `} >
                 <div className="row h-100 ">
                     <div className="col-md-4 my-auto ">
                     <h4 className="card-title d-md-none my-2">{props.titulo}</h4>

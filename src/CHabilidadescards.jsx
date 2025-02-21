@@ -7,7 +7,7 @@ export default function CHabilidadescards(props) {
     return (
         <div>
             <div className='col h-100 justify-content-around '>
-                <div className={`card  h-100 ${ isClicked ? "text-bg-dark"  :"dayProj" } `} >
+                <div className={`card  h-100 ${ isClicked ? "darkProj"  :"dayProj" } `} >
                     <div className="card-header fs-3 fw-bold">{props.habilidades.titulo}</div>
                     <div className="card-body text-start">
                         {/* enviar titulo y porcentaje por la cantidad de habilidades que hayan*/}

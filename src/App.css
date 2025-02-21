@@ -230,6 +230,11 @@ footer {
   background-color: #eceeeb;
   color: #1b1a1a;
 } 
+
+.darkProj{
+  background-color: #1a1b1a;
+  color: #fff;
+} 
 .subir:hover{
   cursor: pointer;
 }

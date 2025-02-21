@@ -24,7 +24,7 @@ export default function CExperiencia() {
     <div className={`container-fluid flex-grow-1 justify-content-center ocultar zoom-in`}>
       <p className='mt-4 fst-italic opacity-50 d-md-none'>EXPERIENCIA</p>
 
-      <div className={`row border my-4 mx-1  ${isClicked ? "text-bg-dark" : "dayProj"}`}>
+      <div className={`row border my-4 mx-1  ${isClicked ? "darkProj" : "dayProj"}`}>
         <div className="col-12 col-sm-6 border-bottom border-end ">
           <h5 className='fst-italic opacity-50 mt-2'>Empleos</h5>
           <ul id="navbar-example3" className={`h-100  mt-4  text-start ps-3 ps-sm-4 `}>
