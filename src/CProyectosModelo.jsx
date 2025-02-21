@@ -32,7 +32,7 @@ export default function CProyectosModelo(props) {
                             </div>
                             <div className='mt-3 d-flex flex-wrap justify-content-center'>
                                 <a className='mx-3' href={props.linkRepositorio} target='blank' >Ver código<i className="bi bi-github ms-1"></i></a>
-                                <a  className='mx-3' href={props.linkPagina} target='blank' >{props.linkPagina ? "Ver Proyecto":""}{props.linkPagina ? <i className="bi bi-browser-chrome ms-1"></i> : ""} </a>
+                                <a  className={props.linkPagina ? "mx-0":"mx3"} href={props.linkPagina} target='blank' >{props.linkPagina ? "Ver Proyecto":""}{props.linkPagina ? <i className="bi bi-browser-chrome ms-1"></i> : ""} </a>
                             </div>
                             {/* <div className='mt-3 d-flex flex-wrap justify-content-center'>
                                 <a className='mx-3' href={props.linkRepositorio} target='blank' data-bs-toggle="tooltip" title="Ver código">Ver código<i className="bi bi-github ms-1"></i></a>

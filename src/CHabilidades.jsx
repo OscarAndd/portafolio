@@ -31,8 +31,8 @@ const scrollToTop = () => {
 };
 export default function CHabilidades() {
   return (
-    <div className='container fade-in-scale '>
-            <p className='text-center mt-4 fst-italic opacity-50 flex-grow-1 ocultar d-md-none'>HABILIDADES</p>
+    <div className='container fade-in-scale ocultar '>
+            <p className='text-center mt-4 fst-italic opacity-50 flex-grow-1 d-md-none'>HABILIDADES</p>
 
       <div className='row row-cols-1 row-cols-lg-2 g-3 mt-3  '> {/* Agrega la clase `g-3` para un margen entre columnas */}
         {/* enviar titulo de la habilidad/ habilidades /porcentajees */}
