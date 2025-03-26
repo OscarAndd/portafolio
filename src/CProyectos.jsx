@@ -10,6 +10,11 @@ export default function CProyectos() {
   let imagenesTransporte = ['imagenesTransporte/transporte1.jpg', 'imagenesTransporte/transporte2.jpg', 'imagenesTransporte/transporte3.jpg',
     'imagenesTransporte/transporte4.jpg']
   let imagenesClima = ['imagenesClima/clima1.jpg', 'imagenesClima/clima2.jpg', 'imagenesClima/clima3.jpg']
+  let imagenesCalculadoraSOAP = ['imagenesCalculadoraSOAP/calculadora1.png', 'imagenesCalculadoraSOAP/calculadora2.png',
+    'imagenesCalculadoraSOAP/calculadora3.png', 'imagenesCalculadoraSOAP/calculadora4.png']
+  let imagenesContactos = ['imagenesContactos/contactos1.png', 'imagenesContactos/contactos2.png', 'imagenesContactos/contactos1.png',
+    'imagenesContactos/contactos4.png', 'imagenesContactos/contactos5.png', 'imagenesContactos/contactos6.png',
+    'imagenesContactos/contactos7.png', 'imagenesContactos/contactos8.png', 'imagenesContactos/contactos9.png']
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -17,6 +22,32 @@ export default function CProyectos() {
   return (
     <div className='container flex-grow-1 slide-in-left ocultar '>
       <p className='text-center mt-4 fst-italic opacity-50 d-md-none'>PROYECTOS</p>
+      <CProyectosModelo
+        idCarousel="8"
+        titulo="Aplicación Calculadora con Web Service SOAP"
+        subtitulo="Java / ReactJS / Bootstrap / JAX-WS / GlassFish "
+        imagenes={imagenesCalculadoraSOAP}
+        descripcion="En esta aplicación se crea un Web Service SOAP con Java y se consume dicho servicio a través de una interfaz de 
+        usuario realizada con ReactJS. La aplicación permite realizar operaciones básicas como suma, resta, multiplicación y división. 
+        Además, se verifican las condiciones de uso, como el ingreso de los números a operar y la división por 0"
+        linkRepositorio="https://github.com/OscarAndd/WebServiceSOAP_Calculadora"
+        linkPagina="" />
+
+      <CProyectosModelo
+        idCarousel="7"
+        titulo="Aplicación Lista de Contactos con PostgreSQL"
+        subtitulo="Java / MVC / PostgreSQL / JDBC / SHA-256 / JSP / Servlet / Boostrap"
+        imagenes={imagenesContactos}
+        descripcion="Esta aplicación web permite registrar a nuevos usuarios en una base de datos o indicar si un 
+        usuario ya existe en la base de datos. Una vez registrados, los usuarios podrán agregar nuevos contactos. 
+        Estos contactos se guardarán en orden alfabético por nombre, también se podrá guardar el correo y el teléfono. 
+        Una vez guardado el contacto, la aplicación permite actualizarlo, modificarlo o eliminarlo de la lista. 
+        La aplicación también permite exportar la lista de contactos a un archivo Excel para compartirlo si es 
+        necesario."
+        linkRepositorio="https://github.com/OscarAndd/ListaDeContactosPostgreSQL"
+        linkPagina="" />
+
+
       <CProyectosModelo
         idCarousel="6"
         titulo="Aplicación Web Estado del Clima"
@@ -105,9 +136,9 @@ export default function CProyectos() {
         linkPagina="https://oscarandd.github.io/CalculadoraBasica/" />
 
       <div className='d-flex flex-row-reverse flex-wrap flex-md-nowrap align-items-center mt-2 mb-4'>
-              <a onClick={scrollToTop} className='mx-auto'> <i className="bi bi-arrow-up-circle fs-2 text-primary subir"></i></a>
-              <h2 className=' flex-grow-1 mb-0 w-100 '>Te invito a ver mis habilidades <Link to="/habilidades"> <i className="bi bi-arrow-right-square"></i></Link></h2>
-            </div>
+        <a onClick={scrollToTop} className='mx-auto'> <i className="bi bi-arrow-up-circle fs-2 text-primary subir"></i></a>
+        <h2 className=' flex-grow-1 mb-0 w-100 '>Te invito a ver mis habilidades <Link to="/habilidades"> <i className="bi bi-arrow-right-square"></i></Link></h2>
+      </div>
     </div>
   )
 }
