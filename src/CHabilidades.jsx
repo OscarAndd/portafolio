@@ -18,8 +18,8 @@ let DB = {
 }
 let herramientas = {
   titulo: "Herramientas",
-  habilidades: ["Git", "GitHub", "VS Code", "Jira", "Azure DevOps Server", "IntelliJ IDEA", "NetBeans"],
-  porcentajes: ["70%", "85%", "90%", "60%", "60%", "90%", "90%"]
+  habilidades: ["Git", "GitHub", "VS Code", "Jira", "Azure DevOps Server", "IntelliJ IDEA", "NetBeans", "Postman", "SOAPUI"],
+  porcentajes: ["70%", "85%", "90%", "60%", "60%", "90%", "90%", "70%", "80%"]
 }
 let HablBlandas = {
   titulo: "Habilidades Blandas",
